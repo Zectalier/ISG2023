@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<level>
+  <dialogs>
+	<dialog text="[fr]Aïe... ce couloir contient... brouilleurs qui perturbent nos comm...uni...cations ![/fr][en]Ouch... this corridor contains... scramblers that disrupt our comm...uni...cations![/en]"/>
+	<dialog text="[fr]Là c'est un peu mieux, mais nous ne pourrons pas utiliser toutes nos actions encore une fois. Nous avons quand même réussi à t'envoyer le strict minimum, à savoir une boucle ainsi qu'un capteur qui t'indique si le robot se trouve sur la case d'un téléporteur.[/fr][en]This is a little better, but we won't be able to use all our actions again. We've still managed to send you the bare minimum, namely a loop and a sensor that tells you if the robot is on a teleport square.[/en]" />
+  </dialogs>
+  <map>
+    <line><cell value="-1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value="-1" /></line>
+    <line><cell value="-1" /><cell value= "0" /><cell value= "3" /><cell value= "0" /><cell value= "0" /><cell value= "0" /><cell value= "2" /><cell value="-1" /></line>
+    <line><cell value="-1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value= "1" /><cell value="-1" /></line>
+  </map>
+  <executionLimit amount="1" />
+  <blockLimits>
+    <blockLimit blockType="Forward" limit="1" />
+    <blockLimit blockType="TurnLeft" limit="0" />
+    <blockLimit blockType="TurnRight" limit="0" />
+    <blockLimit blockType="Wait" limit="0" />
+    <blockLimit blockType="Activate" limit="0" />
+    <blockLimit blockType="TurnBack" limit="0" />
+    <blockLimit blockType="IfThen" limit="0" />
+    <blockLimit blockType="IfElse" limit="0" />
+    <blockLimit blockType="ForLoop" limit="0" />
+    <blockLimit blockType="While" limit="1" />
+    <blockLimit blockType="Forever" limit="0" />
+    <blockLimit blockType="AndOperator" limit="0" />
+    <blockLimit blockType="OrOperator" limit="0" />
+    <blockLimit blockType="NotOperator" limit="1" />
+    <blockLimit blockType="WallFront" limit="0" />
+    <blockLimit blockType="Enemy" limit="0" />
+    <blockLimit blockType="RedArea" limit="0" />
+    <blockLimit blockType="FieldGate" limit="0" />
+    <blockLimit blockType="Terminal" limit="0" />
+    <blockLimit blockType="Exit" limit="1" />
+  </blockLimits>
+  <player inputLine="Bob" posY="1" posX="6" direction="3" />
+  <script outputLine="Bob" editMode="0" />
+  <score twoStars="0" threeStars="5833"/>
+</level>

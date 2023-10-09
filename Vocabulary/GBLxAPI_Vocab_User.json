@@ -1,0 +1,284 @@
+{
+    "action": {},
+    "activity": {
+        "block": {
+            "description": {
+                "en-US": "a programming block"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/block",
+            "name": {
+                "en-US": "block"
+            }
+        },
+        "briefing": {
+            "description": {
+                "en-US": "the briefing panel"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/briefing",
+            "name": {
+                "en-US": "briefing"
+            }
+        },
+        "camera": {
+            "description": {
+                "en-US": "the camera controlled by the player"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/camera",
+            "name": {
+                "en-US": "camera"
+            }
+        },
+        "competencies": {
+            "description": {
+                "en-US": "a list of competencies"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/competencies",
+            "name": {
+                "en-US": "competencies"
+            }
+        },
+        "leveleditor": {
+            "description": {
+                "en-US": "the level editor"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/leveleditor",
+            "name": {
+                "en-US": "leveleditor"
+            }
+        },
+        "program": {
+            "description": {
+                "en-US": "a set of programming blocks"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/program",
+            "name": {
+                "en-US": "program"
+            }
+        },
+        "scenarioeditor": {
+            "description": {
+                "en-US": "the scenario editor"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/scenarioeditor",
+            "name": {
+                "en-US": "scenarioeditor"
+            }
+        },
+        "script": {
+            "description": {
+                "en-US": "a panel that contains a program"
+            },
+            "id": "https://spy.lip6.fr/xapi/activity-types/script",
+            "name": {
+                "en-US": "script"
+            }
+        }
+    },
+    "content": {},
+    "direction": {},
+    "domain": {},
+    "extension": {
+        "content": {
+            "description": {
+                "en-US": "content of a statement"
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/content",
+            "name": {
+                "en-US": "content"
+            }
+        },
+        "context": {
+            "description": {
+                "en-US": "context of a statement"
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/context",
+            "name": {
+                "en-US": "context"
+            }
+        },
+        "error": {
+            "description": {
+                "en-US": "error type (detected, badcondition, infiniteloop\u2026)"
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/error",
+            "name": {
+                "en-US": "error"
+            }
+        },
+        "oldvalue": {
+            "description": {
+                "en-US": "old value of an object. used in combination with value extension."
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/oldvalue",
+            "name": {
+                "en-US": "oldvalue"
+            }
+        },
+        "score": {
+            "description": {
+                "en-US": "score at the end of a level"
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/score",
+            "name": {
+                "en-US": "score"
+            }
+        },
+        "value": {
+            "description": {
+                "en-US": "value of an object"
+            },
+            "id": "https://spy.lip6.fr/xapi/extensions/value",
+            "name": {
+                "en-US": "value"
+            }
+        }
+    },
+    "focus": {},
+    "grade": {},
+    "link": {},
+    "position": {},
+    "skills": {},
+    "state": {},
+    "subdomain": {},
+    "time": {},
+    "topic": {},
+    "type": {},
+    "value": {},
+    "verb": {
+        "bugged": {
+            "description": {
+                "en-US": "indicates an error occurs during programs execution"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/bugged",
+            "name": {
+                "en-US": "bugged"
+            }
+        },
+        "cleaned": {
+            "description": {
+                "en-US": "indicates that the actor cleans a script"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/cleaned",
+            "name": {
+                "en-US": "cleaned"
+            }
+        },
+        "closed": {
+            "description": {
+                "en-US": "indicates that the actor closes briefing dialogs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/closed",
+            "name": {
+                "en-US": "closed"
+            }
+        },
+        "created": {
+            "description": {
+                "en-US": "indicates that the actor creates a new script"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/created",
+            "name": {
+                "en-US": "created"
+            }
+        },
+        "deleted": {
+            "description": {
+                "en-US": "indicates that the actor removes a block from a script"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/deleted",
+            "name": {
+                "en-US": "deleted"
+            }
+        },
+        "executed": {
+            "description": {
+                "en-US": "indicates that the actor executes programs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/executed",
+            "name": {
+                "en-US": "executed"
+            }
+        },
+        "filtered": {
+            "description": {
+                "en-US": "indicates that the actor filters competencies"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/filtered",
+            "name": {
+                "en-US": "filtered"
+            }
+        },
+        "inserted": {
+            "description": {
+                "en-US": "indicates that the actor inserts a new block inside a script"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/inserted",
+            "name": {
+                "en-US": "inserted"
+            }
+        },
+        "modified": {
+            "description": {
+                "en-US": "indicates that the actor modifies for loop nb steps"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/modified",
+            "name": {
+                "en-US": "modified"
+            }
+        },
+        "opened": {
+            "description": {
+                "en-US": "indicates that the actor opens briefing dialogs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/opened",
+            "name": {
+                "en-US": "opened"
+            }
+        },
+        "paused": {
+            "description": {
+                "en-US": "indicates that the actor pauses execution of programs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/paused",
+            "name": {
+                "en-US": "paused"
+            }
+        },
+        "renamed": {
+            "description": {
+                "en-US": "indicates that the actor renames a script"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/renamed",
+            "name": {
+                "en-US": "renamed"
+            }
+        },
+        "resumed": {
+            "description": {
+                "en-US": "indicates that the actor resumes execution of programs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/resumed",
+            "name": {
+                "en-US": "resumed"
+            }
+        },
+        "stepped": {
+            "description": {
+                "en-US": "indicates that the actor executes a new step of the programs"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/stepped",
+            "name": {
+                "en-US": "stepped"
+            }
+        },
+        "stopped": {
+            "description": {
+                "en-US": "indicates that the actor stops programs execution"
+            },
+            "id": "https://spy.lip6.fr/xapi/verbs/stopped",
+            "name": {
+                "en-US": "stopped"
+            }
+        }
+    }
+}

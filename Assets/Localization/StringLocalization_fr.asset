@@ -1,0 +1,1320 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringLocalization_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: e8908b19f1057314e9d95e443e410429, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 683864805376
+    m_Localized: "Jouer un sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 811191291904
+    m_Localized: "Cr\xE9er un sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 866254114816
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926228467712
+    m_Localized: Changer de compte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 969886978048
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1276297662464
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1399186575360
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1721678221312
+    m_Localized: "Charger un sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1796743680000
+    m_Localized: "Sauvegarder le sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1946396446720
+    m_Localized: Niveaux disponibles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2193810051072
+    m_Localized: "Ajouter au sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2309518315520
+    m_Localized: "Sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2391043002368
+    m_Localized: "R\xE9sum\xE9 :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2534509170688
+    m_Localized: "Entrer le r\xE9sum\xE9 de ce sc\xE9nario..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2716013481984
+    m_Localized: "Fitrer par comp\xE9tences"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2801967353856
+    m_Localized: Annuler filtres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2862256279552
+    m_Localized: Tester le niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2910117482496
+    m_Localized: "T\xE9l\xE9charger le niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3015604228096
+    m_Localized: Retour au menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3216184233984
+    m_Localized: Modification du briefing de la mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3373751652352
+    m_Localized: 'Chemin de la mission :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3446535409664
+    m_Localized: Chemin...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3519503716352
+    m_Localized: "Nom de la mission dans ce sc\xE9nario :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3558674321408
+    m_Localized: Nom...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3650747682816
+    m_Localized: "Ajouter un nouvel \xE9l\xE9ment"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3745333432320
+    m_Localized: Sauvegarder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3776245452800
+    m_Localized: Fermer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3905736200192
+    m_Localized: "Choix des comp\xE9tences \xE0 travailler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3973138665472
+    m_Localized: "Choix du r\xE9f\xE9rentiel de comp\xE9tences :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5258407628800
+    m_Localized: Appliquer filtres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5278125051904
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5399780839424
+    m_Localized: 'Entrez un nom d''enregistrement :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5453769920512
+    m_Localized: Entrer un nom...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5484598054912
+    m_Localized: 'Annuler
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5622460633088
+    m_Localized: "S\xE9lectionnez le fichier \xE0 charger :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5663946493952
+    m_Localized: Charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5697463177216
+    m_Localized: 'Annuler
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5850559467520
+    m_Localized: 'Voici ton code :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6000023490560
+    m_Localized: Note le sur ton cahier, tu en auras besoin pour retrouver ta progression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6114460880896
+    m_Localized: J'ai un autre code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6167845982208
+    m_Localized: "Ok, c'est not\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6308409692160
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6734982991872
+    m_Localized: Quel est ton code ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6761813954560
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6883457159168
+    m_Localized: En quelle classe es-tu ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7790383124480
+    m_Localized: "CE1, CM2, 5\xE8me..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7957916209152
+    m_Localized: Je suis enseignant/enseignante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7990438842368
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8407436546048
+    m_Localized: Chargement...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8545789857792
+    m_Localized: 'Annuler
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8746147565568
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024091508736
+    m_Localized: Faible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9139946573824
+    m_Localized: Moyenne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9157935943680
+    m_Localized: Haute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9259509403648
+    m_Localized: "Mode d'int\xE9raction :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9311925620736
+    m_Localized: Clavier/Souris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9388450697216
+    m_Localized: 'Taille interfaces :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9443630960640
+    m_Localized: "Interface r\xE9duite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471124623360
+    m_Localized: Interface normale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9610547482624
+    m_Localized: 'Valider
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9807449083904
+    m_Localized: Suppr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9987326005248
+    m_Localized: Fermer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10341073604608
+    m_Localized: "Lancer l'ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10678513750016
+    m_Localized: "Ex\xE9cuter le pas suivant"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10830947340288
+    m_Localized: "Reprendre l'ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11345672327168
+    m_Localized: "Acc\xE9l\xE9rer l'ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11511670296576
+    m_Localized: "Arr\xEAter l'ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11636727664640
+    m_Localized: Revoir l'introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11853489295360
+    m_Localized: "Relancer le niveau et<br>recommencer \xE0 0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11944417611776
+    m_Localized: Recommencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12100609298432
+    m_Localized: "Revenir \xE0 la mission avant<br>la derni\xE8re ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12178812096512
+    m_Localized: Annuler dernier essai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12271191642112
+    m_Localized: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12467518623744
+    m_Localized: Prochain niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13000996343808
+    m_Localized: 'Inventaire :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13057879494656
+    m_Localized: 'Action :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13138334633984
+    m_Localized: Avancer d'une case
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13606830002176
+    m_Localized: "Pivoter \xE0 gauche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13648018067456
+    m_Localized: "Pivoter \xE0 droite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13753139908608
+    m_Localized: Se retourner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13789164785664
+    m_Localized: Activer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13817132404736
+    m_Localized: Attendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13879958884352
+    m_Localized: "Contr\xF4le :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13930772877312
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13958123933696
+    m_Localized: Si/Sinon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14009785176064
+    m_Localized: "R\xE9p\xE9ter plusieurs fois"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14028999282688
+    m_Localized: Tant que
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14085437837312
+    m_Localized: "R\xE9p\xE9ter sans fin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14181156048896
+    m_Localized: 'Operateur :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14257261694976
+    m_Localized: Et
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14290245701632
+    m_Localized: Ou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14311435325440
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14572153262080
+    m_Localized: 'Capteur :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14694333337600
+    m_Localized: "Mur d\xE9tect\xE9 en face"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14719021010944
+    m_Localized: "Mur d\xE9tect\xE9 \xE0 gauche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14818430210048
+    m_Localized: "Mur d\xE9tect\xE9 \xE0 droite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14891373350912
+    m_Localized: Passage devant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14903067070464
+    m_Localized: "Passage \xE0 gauche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14943588241408
+    m_Localized: "Passage \xE0 droite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15203303739392
+    m_Localized: "Ennemi d\xE9tect\xE9 en face"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15302624858112
+    m_Localized: "Zone surveill\xE9e<br>en face"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15354835554304
+    m_Localized: "Porte d\xE9tect\xE9e en face"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15451057082368
+    m_Localized: "Terminal d\xE9tect\xE9<br>sur ma position"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15507453693952
+    m_Localized: "Sortie d\xE9tect\xE9e<br>sur ma position"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15797519175680
+    m_Localized: Ajouter une zone de programme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16157151383552
+    m_Localized: "Pivoter la cam\xE9ra vers la gauche<br>(Raccourci A)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16209991225344
+    m_Localized: "Avancer la cam\xE9ra vers l'avant<br>(Raccourci Z)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16256510251008
+    m_Localized: "Pivoter la cam\xE9ra vers la droite<br>(Raccourci E)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16297266302976
+    m_Localized: "Avancer la cam\xE9ra vers la gauche<br>(Raccourci Q)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16356917694464
+    m_Localized: Centrer<br>(Raccourci C)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16399242416128
+    m_Localized: "Avancer la cam\xE9ra vers la droite<br>(Raccourci D)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16440837328896
+    m_Localized: Zoomer<br>(Raccourci R)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16481354305536
+    m_Localized: "Avancer la cam\xE9ra vers l'arri\xE8re<br>(Raccourci S)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16522613673984
+    m_Localized: "D\xE9zoomer<br>(Raccourci F)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16648862224384
+    m_Localized: Basculer en vue de dessus ou en perspective<br>(Raccourci V)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16697788780544
+    m_Localized: Changer vue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16831830347776
+    m_Localized: Retour au jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16875987980288
+    m_Localized: Revoir l'introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16978471604224
+    m_Localized: Relancer Niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17002156838912
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17038471122944
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17237952221184
+    m_Localized: "Jouer la vid\xE9o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17335880830976
+    m_Localized: "Mettre la vid\xE9o en pause"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17493574078464
+    m_Localized: "Pr\xE9c\xE9dent"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17521407479808
+    m_Localized: Suivant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22918692392960
+    m_Localized: Texte de briefing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23180039475200
+    m_Localized: Entrer un texte...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23332913467392
+    m_Localized: 'Image :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23448588177408
+    m_Localized: 'Hauteur max. :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23516384907264
+    m_Localized: Hauteur...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23570181050368
+    m_Localized: "Cam\xE9ra :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23646219587584
+    m_Localized: 'Son :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23701571817472
+    m_Localized: "Vid\xE9o :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24348975222784
+    m_Localized: Autoriser la programmation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24749925519360
+    m_Localized: Editer le briefing de cette mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24788399869952
+    m_Localized: "D\xE9placer le niveau vers le haut"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24802924744704
+    m_Localized: "D\xE9placer le niveau vers le bas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24877365252096
+    m_Localized: "Supprimer ce niveau du sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25040024555520
+    m_Localized: "Trouve un terminal pour<br>me d\xE9sactiver !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25222476779520
+    m_Localized: Clique pour voir mon<br>comportement !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25410771668992
+    m_Localized: Me localiser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25462458077184
+    m_Localized: 'Programme :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25546419654656
+    m_Localized: "r\xE9duire/agrandir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25641093484544
+    m_Localized: Fermer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25818227331072
+    m_Localized: "Zone surveill\xE9e !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26103297396736
+    m_Localized: '#agentName<br>clique pour voir mon<br>comportement !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26381211979776
+    m_Localized: "Efface la zone d'\xE9dition"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26428905410560
+    m_Localized: "D\xE9truire le script"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26482798022656
+    m_Localized: "Envoyer le code \xE0 :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26529824559104
+    m_Localized: Nom...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26590130262016
+    m_Localized: "Zone d'\xE9dition :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27116678991872
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27144231374848
+    m_Localized: Alors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27167606231040
+    m_Localized: Sinon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27203710799872
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27223814098944
+    m_Localized: Alors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27375123615744
+    m_Localized: Toujours
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27435920052224
+    m_Localized: Faire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27630720307200
+    m_Localized: "Zone r\xE9serv\xE9e aux blocs \"Action\" ou \"Contr\xF4le\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33770803875840
+    m_Localized: "Zone r\xE9serv\xE9e aux blocs \"Op\xE9rateur\" ou \"Capteur\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 711780750118912
+    m_Localized: "Choix du r\xE9f\xE9rentiel de comp\xE9tences :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 711888958967808
+    m_Localized: Voir les niveaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712126671147008
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712137517617152
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712147181293568
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712162368868352
+    m_Localized: "R\xE9essayer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712259118878720
+    m_Localized: "Erreur lors de l'acc\xE8s au document #0# : #1#"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712378438438912
+    m_Localized: "La liste des r\xE9f\xE9rentiels est mal form\xE9e : #0#"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712443726974976
+    m_Localized: "R\xE9f\xE9rentiel num\xE9ro #0# non d\xE9fini."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712566200651776
+    m_Localized: "Cette partie du logiciel n'est pas con\xE7ue pour \xEAtre utilis\xE9e
+      sur smartphone ou tablette.<br><br>Nous vous conseillons de basculer sur un
+      ordinateur en mode plein \xE9cran avant de poursuivre l'\xE9dition."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712666264162304
+    m_Localized: "Aucun niveau compatible avec votre s\xE9lection"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712733154922496
+    m_Localized: "Erreur ! Le niveau \"#0#\" n'est pas pr\xE9sent dans la base de
+      donn\xE9e, veuillez importer le fichier manquant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712854215118848
+    m_Localized: "Le nom est invalide. Il ne peut \xEAtre vide et contenir les carat\xE8res
+      suivants : #0#"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712925262434304
+    m_Localized: "Un fichier avec le nom \"#0#\" existe d\xE9j\xE0, souhaitez-vous
+      le remplacer ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713025137201152
+    m_Localized: "Fichier enregistr\xE9 : #0#/#1#/#2#"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713126840684544
+    m_Localized: "Erreur, le fichier n'a pas \xE9t\xE9 enregistr\xE9.\\n#0#"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713342226583552
+    m_Localized: "Impossible de r\xE9cup\xE9rer les donn\xE9es de progression pour
+      \"#0#\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713634150141952
+    m_Localized: Session corrompue, veuillez entrer un nouveau code de session.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713694342598656
+    m_Localized: "Session \"#0#\" charg\xE9e avec succ\xE8s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713787225460736
+    m_Localized: "Fichier(s) charg\xE9(s)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 713984642961408
+    m_Localized: 'Erreur lors du chargement du fichier "#0#" : #1#'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714172677804032
+    m_Localized: "Echec de v\xE9rification de la disponibilit\xE9 du code de session
+      \"#0#\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714311928696832
+    m_Localized: "Nouvelle tentative de v\xE9rification de la disponibilit\xE9 du
+      code de session \"#0#\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714457039032320
+    m_Localized: "Echec de r\xE9cup\xE9ration des donn\xE9es de la session \"#0#\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714573607129088
+    m_Localized: "Nouvelle tentative de r\xE9cup\xE9ration des donn\xE9es de la session
+      \"#0#\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714654649470976
+    m_Localized: Echec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714805749272576
+    m_Localized: Nouvel essai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715023328792576
+    m_Localized: "n'est pas un sc\xE9nario ou un niveau valide!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715070237888512
+    m_Localized: "Comp\xE9tences en jeu dans ce sc\xE9nario :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715129046224896
+    m_Localized: "Aucune comp\xE9tence identifi\xE9e dans ce sc\xE9nario"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715173610704896
+    m_Localized: Textes de briefing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715208750583808
+    m_Localized: "par d\xE9faut"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715283144953856
+    m_Localized: "personnalis\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715325620670464
+    m_Localized: "Aucun texte d\xE9fini"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715371124674560
+    m_Localized: "Comp\xE9tences en jeu :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715443711299584
+    m_Localized: "Aucune comp\xE9tence identifi\xE9e pour ce niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715500657364992
+    m_Localized: "Aucune information \xE0 afficher sur ce niveau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1068622491734016
+    m_Localized: 'Nom :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070366151987200
+    m_Localized: "Entrer le nom du sc\xE9nario..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076074868166656
+    m_Localized: SON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1090303109156864
+    m_Localized: Reste #0#
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1356551025905664
+    m_Localized: "Vous avez \xE9t\xE9 rep\xE9r\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1357804833394688
+    m_Localized: "Bravo vous avez termin\xE9 ce sc\xE9nario !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1357982235676672
+    m_Localized: "Bravo vous avez gagn\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359335028740096
+    m_Localized: Une condition est mal remplie !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359536586018816
+    m_Localized: "Vous n'avez pas r\xE9ussi \xE0 atteindre le t\xE9l\xE9porteur et
+      vous n'avez plus d'ex\xE9cution disponible.<br>Essayez de r\xE9soudre ce niveau
+      en moins de coup !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359651556085760
+    m_Localized: "Aucune action ne peut \xEAtre ex\xE9cut\xE9e !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359728970354688
+    m_Localized: "ATTENTION, boucle infinie d\xE9tect\xE9e...<br>Risque de surchauffe
+      du processeur du robot, interuption du programme d'urgence !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359852308058112
+    m_Localized: ERREUR de chargement du niveau, veuillez retourner au menu principal
+      !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2129540151562240
+    m_Localized: "Cr\xE9er un niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953133158776832
+    m_Localized: 'Nom :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953438072094720
+    m_Localized: "Synchronis\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953466119405568
+    m_Localized: "V\xE9rrouill\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953798861930496
+    m_Localized: "Bugu\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953822081597440
+    m_Localized: "Ind\xE9fini"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14953943724802048
+    m_Localized: 'Solution :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14961910025109504
+    m_Localized: "Verrouill\xE9 : le joueur ne peut pas renommer le script<br>Synchronis\xE9
+      : si le joueur renomme le script, il renommera automatiquement les balises
+      du joueur associ\xE9es<br>Editable (par d\xE9faut) : si le joueur renomme le
+      script, il ne renommera pas automatiquement les balises du joueur associ\xE9es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14962808168202240
+    m_Localized: "Optimal : le script donn\xE9 est la solution optimale pour le niveau<br>Non
+      Optimal : le script donn\xE9 r\xE9sout le niveau mais il peut \xEAtre optimis\xE9<br>Bugu\xE9
+      : le script donn\xE9 ne r\xE9sout pas le niveau (bug ou incomplet)<br>Ind\xE9fini
+      (par d\xE9faut)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15908815441838080
+    m_Localized: Editer carte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15909299489685504
+    m_Localized: Editer scripts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15909635105308672
+    m_Localized: "Param\xE8tres globaux"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910002069159936
+    m_Localized: Tester le niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910245879857152
+    m_Localized: "Retour \xE0 l'\xE9diteur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910282206724096
+    m_Localized: Nouveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910449861443584
+    m_Localized: Ouvrir...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910473668313088
+    m_Localized: Sauvegarder...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15910516383105024
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15914307035676672
+    m_Localized: Effacer le sol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15914500141432832
+    m_Localized: "Cr\xE9er du sol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15914582588866560
+    m_Localized: "Cr\xE9er des murs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915472716644352
+    m_Localized: "Ajouter un d\xE9part"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915506363351040
+    m_Localized: "Ajouter une arriv\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915532208652288
+    m_Localized: "S\xE9lectionner un objet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915569626038272
+    m_Localized: "Cr\xE9er un robot programmable"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915715109666816
+    m_Localized: "Cr\xE9er un ennemi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915744687898624
+    m_Localized: "Cr\xE9er une porte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915769711116288
+    m_Localized: "Cr\xE9er un terminal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915799532617728
+    m_Localized: "Cr\xE9er une pi\xE8ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15915864850513920
+    m_Localized: "Ajouter une d\xE9coration"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921194930094080
+    m_Localized: Orienter l'objet vers le haut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921218892152832
+    m_Localized: Orienter l'objet vers la droite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921279487262720
+    m_Localized: Orienter l'objet vers le bas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921305856851968
+    m_Localized: Orienter l'objet vers la gauche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921422227816448
+    m_Localized: "Cette section permet de d\xE9finir la ligne<br>de communication
+      utilis\xE9e par ce robot"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921491865845760
+    m_Localized: Ligne de communication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921534706466816
+    m_Localized: Nom...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921693158883328
+    m_Localized: "Cette section permet de param\xE9trer<br>la ligne de vue de l'ennemi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921804249219072
+    m_Localized: "Port\xE9e de vue"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921835853299712
+    m_Localized: "Port\xE9e..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15921956246601728
+    m_Localized: "Si coch\xE9, l'ennemi ne surveillera pas sa propre position"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922150610649088
+    m_Localized: Ignorer sa pos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922289140121600
+    m_Localized: Vue en ligne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922307695722496
+    m_Localized: Vue en croix
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922479473442816
+    m_Localized: "Cette section vous permet de d\xE9finir la liste des<br>slots contr\xF4l\xE9s
+      par ce terminal (Chaque num\xE9ro<br>de slot doit \xEAtre s\xE9par\xE9 par
+      une virgule)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922676974829568
+    m_Localized: "Liste des slots contr\xF4l\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922779785609216
+    m_Localized: "Si activ\xE9 les portes li\xE9es sont maintenues ferm\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922802455822336
+    m_Localized: est actif ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15922945045381120
+    m_Localized: "Cette section permet de d\xE9finir le slot de contr\xF4le<br>de
+      la porte. Pour qu'une porte puisse \xEAtre active,<br>le num\xE9ro de slot
+      indiqu\xE9 ici doit \xEAtre pr\xE9sent dans<br>la liste des slots contr\xF4l\xE9s
+      par au moins un terminal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15923559041155072
+    m_Localized: "Slot de contr\xF4le"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15923681313505280
+    m_Localized: "Cette section permet de d\xE9finir l'\xE9l\xE9ment<br>de d\xE9cors
+      \xE0 int\xE9grer sur la carte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15923983643131904
+    m_Localized: "Choix du d\xE9cor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15924783589179392
+    m_Localized: "Illimit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15924801637269504
+    m_Localized: Cacher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15926540629262336
+    m_Localized: "Param\xE8tres globaux :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15926636754321408
+    m_Localized: "Si actif, le joueur peut cr\xE9er/modifier les programmes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15926664084406272
+    m_Localized: "D\xE9placer les blocs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15926763283890176
+    m_Localized: Permet de limiter le nombre de fois que le joueur<br>peut utiliser
+      le bouton "Executer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15926855608909824
+    m_Localized: "Limiter le nombre d'ex\xE9cution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927121561337856
+    m_Localized: Limite...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927228172156928
+    m_Localized: "Affiche un brouillard ne montrant la sc\xE8ne qu'\xE0<br>proximit\xE9
+      du robot contr\xF4l\xE9 par le joueur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927426491432960
+    m_Localized: Brouillard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927571975061504
+    m_Localized: "Permet de cacher les zones d'arriv\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927673250725888
+    m_Localized: Cacher les sorties
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927784601108480
+    m_Localized: "Score minimum pour 2 \xE9toiles :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15927820416270336
+    m_Localized: "Score minimum pour 3 \xE9toiles :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15928388878680064
+    m_Localized: Avancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929510704005120
+    m_Localized: Pivoter gauche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929546544332800
+    m_Localized: Pivoter droite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929576848179200
+    m_Localized: Se retourner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929605952454656
+    m_Localized: Activer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929630510104576
+    m_Localized: Attendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929649908760576
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929674315415552
+    m_Localized: Si/Sinon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15929771883315200
+    m_Localized: "R\xE9p\xE9ter n fois"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930341285249024
+    m_Localized: Tant que
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930436168794112
+    m_Localized: Boucle infinie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930482545213440
+    m_Localized: Et
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930531450798080
+    m_Localized: Ou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930590133305344
+    m_Localized: Sortie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930701752123392
+    m_Localized: Porte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930772681998336
+    m_Localized: "Zone surveill\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930975409487872
+    m_Localized: Ennemi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931176266317824
+    m_Localized: "Passage \xE0 d."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931233841528832
+    m_Localized: "Passage \xE0 g."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931329803010048
+    m_Localized: Passage devant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931375336374272
+    m_Localized: "Mur \xE0 droite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931402888757248
+    m_Localized: "Mur \xE0 gauche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931435885346816
+    m_Localized: Mur devant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15931471364964352
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15933182984929280
+    m_Localized: "D\xE9finit les seuils de score requis pour l'obtention de 2 \xE9toiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15933196595445760
+    m_Localized: "D\xE9finit les seuils de score requis pour l'obtention de 3 \xE9toiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16184216508514304
+    m_Localized: NouveauScenario.xml
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16184239854010368
+    m_Localized: NouveauNiveau.xml
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18072752069361664
+    m_Localized: Vide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18072772826972160
+    m_Localized: Sol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18072795828535296
+    m_Localized: Mur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18072811502649344
+    m_Localized: "D\xE9part"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18072830238605312
+    m_Localized: Sortie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18085165023969280
+    m_Localized: "S\xE9lection"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18085207671652352
+    m_Localized: Porte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18085240219451392
+    m_Localized: "Pi\xE8ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18085266488377344
+    m_Localized: "D\xE9co."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18103855845031936
+    m_Localized: Sol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21410757026856960
+    m_Localized: "Ajout impossible apr\xE8s avoir<br>commenc\xE9 \xE0 r\xE9soudre
+      le niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21411482012303360
+    m_Localized: "Ce programme sera envoy\xE9 \xE0 #1#.<br><i>Vous ne pouvez pas
+      le changer</i>."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
