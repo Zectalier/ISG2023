@@ -1360,6 +1360,19 @@ MonoBehaviour:
     m_Key: GameData/GameData 47
     m_Metadata:
       m_Items: []
+  - m_Id: 61252705278169088
+    m_Key: InitVariable/Canvas (Environment)/Header/NomText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61253267990188032
+    m_Key: InitVariable/Canvas (Environment)/Header/NomValeur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61255026913513472
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/VariablePanelName/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

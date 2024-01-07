@@ -399,7 +399,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14694333337600
-    m_Localized: "Mur d\xE9tect\xE9 en face"
+    m_Localized: Creat. Variable
     m_Metadata:
       m_Items: []
   - m_Id: 14719021010944
@@ -651,7 +651,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 27375123615744
-    m_Localized: Toujours
+    m_Localized: 'Valeur
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 27435920052224
@@ -1207,7 +1209,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15930590133305344
-    m_Localized: Sortie
+    m_Localized: Create Variable
     m_Metadata:
       m_Items: []
   - m_Id: 15930701752123392
@@ -1314,6 +1316,18 @@ MonoBehaviour:
   - m_Id: 21411482012303360
     m_Localized: "Ce programme sera envoy\xE9 \xE0 #1#.<br><i>Vous ne pouvez pas
       le changer</i>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61252705278169088
+    m_Localized: Nom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61253267990188032
+    m_Localized: Valeur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61255026913513472
+    m_Localized: 'Variable :'
     m_Metadata:
       m_Items: []
   references:

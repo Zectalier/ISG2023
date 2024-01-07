@@ -693,14 +693,20 @@ public class TitleScreenSystem : FSystem {
 			int id = i;
 			button.transform.Find("Button").GetComponent<Button>().onClick.AddListener(delegate { launchLevel(campaignKey, id); });
 			GameObjectManager.bind(button);
-			//locked levels
+
+            //TEMPORARY LEVEL UNLOCKER
+            //locked levels
+            /*
 			if ((userData.progression != null && userData.progression.ContainsKey(campaignKey) && userData.progression[campaignKey] >= i) || (userData.progression == null && PlayerPrefs.GetInt(campaignKey, 0) >= i) || i == 0) //by default first level of directory is the only unlocked level of directory
 				button.GetComponentInChildren<Button>().interactable = true;
 			//unlocked levels
 			else
 				button.GetComponentInChildren<Button>().interactable = false;
-			//scores
-			string highScoreKey = Utility.extractFileName(levelData.src);
+			*/
+            button.GetComponentInChildren<Button>().interactable = true;
+
+            //scores
+            string highScoreKey = Utility.extractFileName(levelData.src);
 			int scoredStars = (userData.highScore != null ? (userData.highScore.ContainsKey(highScoreKey) ? userData.highScore[highScoreKey] : 0) : PlayerPrefs.GetInt(highScoreKey + gameData.scoreKey, 0)); //0 star by default
 			Transform scoreCanvas = button.transform.Find("ScoreCanvas");
 			for (int nbStar = 0; nbStar < 4; nbStar++)

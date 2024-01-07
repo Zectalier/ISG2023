@@ -1297,5 +1297,17 @@ MonoBehaviour:
     m_Localized: This program will be sent to #1#.<br><i>You cannot change it</i>.
     m_Metadata:
       m_Items: []
+  - m_Id: 61252705278169088
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61253267990188032
+    m_Localized: Value
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61255026913513472
+    m_Localized: 'Variable :'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

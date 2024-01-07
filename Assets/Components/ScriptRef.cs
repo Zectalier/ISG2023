@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ScriptRef : MonoBehaviour {
@@ -6,4 +7,5 @@ public class ScriptRef : MonoBehaviour {
 	public GameObject executablePanel; //container to show/hide - root of Container prefab
 	public bool scriptFinished;
 	public int nbOfInactions;
+	public Dictionary<string, string> variables = new Dictionary<string, string>();
 }

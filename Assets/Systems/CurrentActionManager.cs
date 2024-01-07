@@ -4,6 +4,8 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Runtime.CompilerServices;
+using UnityEngine.XR;
 
 /// <summary>
 /// Manage CurrentAction components, parse scripts and define first action, next actions, evaluate boolean expressions (if and while)...
@@ -178,6 +180,15 @@ public class CurrentActionManager : FSystem
 				// always return firstchild of this ForeverControl
 				return rec_getFirstActionOf(action.GetComponent<ForeverControl>().firstChild, agent);
 			}
+			//check if action is a Variable
+			else if (action.GetComponent<InitVariable>())
+			{
+				InitVariable varAction = action.GetComponent<InitVariable>();
+				string var_name = varAction.var_Name.GetComponent<TMP_InputField>().text;
+				string var_value = varAction.var_Value.GetComponent<TMP_InputField>().text;
+				agent.GetComponent<ScriptRef>().variables[var_name] = var_value;
+                return action;
+            }
 		}
 		return null;
 	}
@@ -358,7 +369,7 @@ public class CurrentActionManager : FSystem
 		if (current_ba != null)
 		{
 			// if next is not defined or is a BasicAction we return it
-			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>())
+			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>() || current_ba.next.GetComponent<InitVariable>())
 				return current_ba.next;
 			else
 				return getFirstActionOf(current_ba.next, agent);
@@ -460,7 +471,6 @@ public class CurrentActionManager : FSystem
 			else
 				return getFirstActionOf(foreverAction.firstChild, agent);
 		}
-
 		return null;
 	}
 

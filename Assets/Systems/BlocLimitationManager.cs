@@ -77,6 +77,8 @@ public class BlocLimitationManager : FSystem
 				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IfElse");
 			else if (go.GetComponent<IfControl>())
 				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IfThen");
+			else if (go.GetComponent<InitVariable>())
+				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("InitVariable");
 		}
 	}
 
