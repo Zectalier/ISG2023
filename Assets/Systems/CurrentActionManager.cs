@@ -154,8 +154,9 @@ public class CurrentActionManager : FSystem
 			else if (action.GetComponent<ForControl>())
 			{
 				ForControl forCont = action.GetComponent<ForControl>();
+				int nbFor = getForNbFor(forCont, agent);
 				// check if this ForControl include a child and nb iteration != 0 and end loop not reached
-				if (forCont.firstChild != null && forCont.nbFor != 0 && forCont.currentFor < forCont.nbFor)
+				if (forCont.firstChild != null && nbFor != 0 && forCont.currentFor < nbFor)
 				{
 					forCont.currentFor++;
 					forCont.transform.GetChild(1).GetChild(1).GetComponent<TMP_InputField>().text = (forCont.currentFor).ToString() + " / " + forCont.nbFor.ToString();
@@ -165,7 +166,7 @@ public class CurrentActionManager : FSystem
 				else
 				{
 					// this for doesn't contain action or nb iteration == 0 or end loop reached => get first action of next action (could be if, for...)
-					if (forCont.currentFor >= forCont.nbFor)
+					if (forCont.currentFor >= nbFor)
                     {
 						// reset nb iteration to 0
 						forCont.currentFor = 0;
@@ -180,19 +181,21 @@ public class CurrentActionManager : FSystem
 				// always return firstchild of this ForeverControl
 				return rec_getFirstActionOf(action.GetComponent<ForeverControl>().firstChild, agent);
 			}
-			//check if action is a Variable
-			else if (action.GetComponent<InitVariable>())
-			{
-				InitVariable varAction = action.GetComponent<InitVariable>();
-				string var_name = varAction.var_Name.GetComponent<TMP_InputField>().text;
-				string var_value = varAction.var_Value.GetComponent<TMP_InputField>().text;
-				agent.GetComponent<ScriptRef>().variables[var_name] = var_value;
-                return action;
-            }
 		}
 		return null;
 	}
 
+	private int getForNbFor(ForControl forCont, GameObject agent)
+    {
+		int nbFor;
+		if(int.TryParse(forCont.nbFor, out nbFor))
+			return nbFor;
+        else
+        {
+			nbFor = int.Parse(agent.GetComponent<ScriptRef>().variables[forCont.nbFor]);
+			return nbFor;
+		}
+    }
 	// Return true if "condition" is valid and false otherwise
 	private bool ifValid(List<string> condition, GameObject agent)
 	{
@@ -395,8 +398,9 @@ public class CurrentActionManager : FSystem
 		// check if it is a ForAction
 		else if(currentAction.GetComponent<ForControl>()){
 			ForControl forAct = currentAction.GetComponent<ForControl>();
+			int nbFor = getForNbFor(forAct, agent);
 			// ForAction reach the number of iterations
-			if (forAct.currentFor >= forAct.nbFor){
+			if (forAct.currentFor >= nbFor){
 				// reset nb iteration to 0
 				forAct.currentFor = 0;
 				forAct.transform.GetChild(1).GetChild(1).GetComponent<TMP_InputField>().text = (forAct.currentFor).ToString() + " / " + forAct.nbFor.ToString();

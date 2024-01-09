@@ -286,7 +286,7 @@ public class ScriptGenerator : FSystem {
 				firstContainerBloc = obj.transform.Find("Container");
 				BaseElement action = obj.GetComponent<ForControl>();
 
-				((ForControl)action).nbFor = int.Parse(actionNode.Attributes.GetNamedItem("nbFor").Value);
+				((ForControl)action).nbFor = actionNode.Attributes.GetNamedItem("nbFor").Value;
 				obj.transform.GetComponentInChildren<TMP_InputField>().text = ((ForControl)action).nbFor.ToString();
 
 				if (actionNode.HasChildNodes)

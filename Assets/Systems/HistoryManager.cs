@@ -133,7 +133,7 @@ public class HistoryManager : FSystem
 					// Create for control
 					ForControl forCont = Utility.createEditableBlockFromLibrary(libraryFor, canvas).GetComponent<ForControl>();
 					forCont.currentFor = 0;
-					forCont.nbFor = minNbOfInaction;
+					forCont.nbFor = minNbOfInaction.ToString();
 					forCont.transform.GetComponentInChildren<TMP_InputField>(true).text = forCont.nbFor.ToString();
 					forCont.transform.SetParent(gameData.actionsHistory.transform.GetChild(containerCpt).GetChild(0), false);
 					// Create Wait action

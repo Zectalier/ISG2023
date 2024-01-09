@@ -46,7 +46,7 @@ public class SaveContent {
     public class RawLoop
     {
         public int currentFor;
-        public int nbFor;
+        public string nbFor;
         public RawLoop(ForControl fc)
         {
             currentFor = fc.currentFor;

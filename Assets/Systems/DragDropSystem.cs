@@ -743,12 +743,13 @@ public class DragDropSystem : FSystem
 		}
 	}
 
+	/*
 	// see inputFiels in ForBloc prefab in inspector
 	public void onlyPositiveInteger(GameObject forBlock, string newValue)
 	{
-		int oldValue = forBlock.GetComponent<ForControl>().nbFor;
+		string oldValue = forBlock.GetComponent<ForControl>().nbFor;
 		Transform input = forBlock.transform.Find("Header");
-		int res;
+		string res;
 		bool success = Int32.TryParse(newValue, out res);
 		if (!success || (success && Int32.Parse(newValue) <= 0))
 		{
@@ -774,4 +775,5 @@ public class DragDropSystem : FSystem
 			});
 		}
 	}
+	*/
 }

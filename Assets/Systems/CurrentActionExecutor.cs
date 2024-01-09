@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using FYFY;
+using TMPro;
 
 /// <summary>
 /// This system executes new currentActions
@@ -8,11 +9,13 @@ public class CurrentActionExecutor : FSystem {
 	private Family f_wall = FamilyManager.getFamily(new AllOfComponents(typeof(Position)), new AnyOfTags("Wall", "Door"), new AnyOfProperties(PropertyMatcher.PROPERTY.ACTIVE_IN_HIERARCHY));
 	private Family f_activableConsole = FamilyManager.getFamily(new AllOfComponents(typeof(Activable),typeof(Position),typeof(AudioSource)));
     private Family f_newCurrentAction = FamilyManager.getFamily(new AllOfComponents(typeof(CurrentAction), typeof(BasicAction)));
+	private Family f_initCurrentAction = FamilyManager.getFamily(new AllOfComponents(typeof(CurrentAction), typeof(InitVariable)));
 	private Family f_agent = FamilyManager.getFamily(new AllOfComponents(typeof(ScriptRef), typeof(Position)));
 
 	protected override void onStart()
 	{
 		f_newCurrentAction.addEntryCallback(onNewCurrentAction);
+		f_initCurrentAction.addEntryCallback(onNewInitVariable);
 		Pause = true;
 	}
 
@@ -123,6 +126,22 @@ public class CurrentActionExecutor : FSystem {
 		// notify agent moving
 		if (ca.agent.CompareTag("Drone") && !ca.agent.GetComponent<Moved>())
 			GameObjectManager.addComponent<Moved>(ca.agent);
+	}
+
+	//add the variable to the agent dictionary
+	private void onNewInitVariable(GameObject currentAction)
+    {
+		Pause = false; // activates onProcess to identify inactive robots
+
+		CurrentAction ca = currentAction.GetComponent<CurrentAction>();
+
+		InitVariable varAction = currentAction.GetComponent<InitVariable>();
+		string var_name = varAction.var_Name.GetComponent<TMP_InputField>().text;
+		string var_value = varAction.var_Value.GetComponent<TMP_InputField>().text;
+		
+		ca.agent.GetComponent<ScriptRef>().variables[var_name] = var_value;
+
+		Debug.Log(ca.agent.GetComponent<ScriptRef>().variables[var_name]);
 	}
 
 	private void ApplyForward(GameObject go){

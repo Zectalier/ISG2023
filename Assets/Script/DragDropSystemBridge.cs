@@ -44,9 +44,11 @@ public class DragDropSystemBridge : MonoBehaviour
     {
         DragDropSystem.instance.refreshHierarchyContainers(gameObject);
     }
+
     public void onlyPositiveInteger(string newValue)
     {
-        DragDropSystem.instance.onlyPositiveInteger(gameObject, newValue);
+        //DragDropSystem.instance.onlyPositiveInteger(gameObject, newValue);
+        Debug.Log("Only Positive Value!");
     }
     public void setNextFocusedGameObject(GameObject go)
     {

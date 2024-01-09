@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class InitVariable : BaseElement
+public class InitVariable : MonoBehaviour
 {
     // Advice: FYFY component aims to contain only public members (according to Entity-Component-System paradigm.
-    public enum ActionType { Forward, TurnLeft, TurnRight, Wait, Activate, TurnBack };
-    public ActionType actionType;
+    //public enum ActionType { Forward, TurnLeft, TurnRight, Wait, Activate, TurnBack };
+    //public ActionType actionType;
     public GameObject var_Name;
 	public GameObject var_Value;
 }
