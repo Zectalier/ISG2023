@@ -399,7 +399,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14694333337600
-    m_Localized: Creat. Variable
+    m_Localized: "Mur d\xE9tect\xE9 en Face"
     m_Metadata:
       m_Items: []
   - m_Id: 14719021010944
@@ -1344,6 +1344,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 63458252916199424
     m_Localized: "Incr\xE9mentation"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488749151129600
+    m_Localized: "Cr\xE9er une variable"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488947432656896
+    m_Localized: Retourner la variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489209866063872
+    m_Localized: "Sup\xE9rieur \xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489358122127360
+    m_Localized: "Incr\xE9menter la variable"
     m_Metadata:
       m_Items: []
   references:

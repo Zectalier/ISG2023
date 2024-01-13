@@ -605,7 +605,7 @@ MonoBehaviour:
       type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 7696918388696197835}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - id: 1
@@ -621,7 +621,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:e8908b19f1057314e9d95e443e410429
           m_TableEntryReference:
-            m_KeyId: 14694333337600
+            m_KeyId: 63489209866063872
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
       type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 8550554465701122960}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - id: 1
@@ -1192,7 +1192,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:e8908b19f1057314e9d95e443e410429
           m_TableEntryReference:
-            m_KeyId: 14694333337600
+            m_KeyId: 63488749151129600
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -1668,7 +1668,7 @@ MonoBehaviour:
       type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 2600259113902882487}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - id: 1
@@ -1684,7 +1684,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:e8908b19f1057314e9d95e443e410429
           m_TableEntryReference:
-            m_KeyId: 14694333337600
+            m_KeyId: 63489358122127360
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -2739,7 +2739,7 @@ MonoBehaviour:
       type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
-        m_Target: {fileID: 8767049836057997233}
+        m_Target: {fileID: 0}
         m_TrackedProperties:
           items:
           - id: 1
@@ -2755,7 +2755,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:e8908b19f1057314e9d95e443e410429
           m_TableEntryReference:
-            m_KeyId: 14694333337600
+            m_KeyId: 63488947432656896
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

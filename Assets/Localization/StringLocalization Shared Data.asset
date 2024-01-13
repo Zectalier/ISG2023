@@ -1393,6 +1393,22 @@ MonoBehaviour:
       View/Viewport/Content/editorBlockPrefab (28)/BlockName
     m_Metadata:
       m_Items: []
+  - m_Id: 63488749151129600
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/InitVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488947432656896
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/GetVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489209866063872
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/SupVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489358122127360
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/IncVariable
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

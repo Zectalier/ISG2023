@@ -1325,5 +1325,21 @@ MonoBehaviour:
     m_Localized: Increment
     m_Metadata:
       m_Items: []
+  - m_Id: 63488749151129600
+    m_Localized: Create a variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488947432656896
+    m_Localized: Get variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489209866063872
+    m_Localized: Greater than
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489358122127360
+    m_Localized: Increment the variable
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
