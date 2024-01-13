@@ -369,7 +369,12 @@ public class ScriptGenerator : FSystem {
 						var_Name.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("name").Value;
 						var_Value.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("value").Value;
                         break;
-					case "GetVariable":
+                    case "IncVariable":
+                        obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName("IncVariable"), mainCanvas);
+                        GameObject var_IncName = obj.GetComponent<IncVariable>().var_Name;
+                        var_IncName.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("name").Value;
+                        break;
+                    case "GetVariable":
 						obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName("GetVariable"), mainCanvas);
 						GameObject var_Name2 = obj.GetComponent<GetVariable>().var_Name;
 						var_Name2.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("name").Value;

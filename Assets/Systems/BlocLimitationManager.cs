@@ -64,7 +64,10 @@ public class BlocLimitationManager : FSystem
 			if (go.GetComponent<BasicAction>())
 			{
 				if (go.GetComponent<BasicAction>().isVariable)
-                    go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("InitVariable");
+					if(go.GetComponent<InitVariable>() != null)
+						go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("InitVariable");
+					else if (go.GetComponent<IncVariable>() != null)
+						go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IncVariable");
                 else
 					go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName(go.GetComponent<BasicAction>().actionType.ToString());
 			}

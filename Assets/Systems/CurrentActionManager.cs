@@ -383,7 +383,7 @@ public class CurrentActionManager : FSystem
 		if (current_ba != null)
 		{
 			// if next is not defined or is a BasicAction we return it
-			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>() || current_ba.next.GetComponent<InitVariable>())
+			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>())
 				return current_ba.next;
 			else
 				return getFirstActionOf(current_ba.next, agent);

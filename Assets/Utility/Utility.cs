@@ -545,16 +545,31 @@ public static class Utility
 			// Cas d'une ACTION
 			if (script is BasicAction)
 			{
-				if ((script as BasicAction).isVariable) //Cas d'un InitVariable
+				if ((script as BasicAction).isVariable) //Cas d'un Action bloc Variable
                 {
-                    DropZone dz = script.GetComponentInChildren<DropZone>(true);
-                    if (dz != null && dz.gameObject == focusedArea)
-                        export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
+					//if script gameobejct has a InitVariable component
+					if (script.gameObject.GetComponent<InitVariable>() != null)
+					{
+						DropZone dz = script.GetComponentInChildren<DropZone>(true);
+						if (dz != null && dz.gameObject == focusedArea)
+							export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
 
-                    if (exportType == ExportType.PseudoCode)
-                        export += (script.GetComponent<InitVariable>() ? "* " : "") + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "," + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + ";";
-                    else
-                        export += indent(indentLevel) + "<variable type=" + "\"InitVariable\"" + " name=\"" + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "\" value=\"" + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + "\"/>" + "\n";
+						if (exportType == ExportType.PseudoCode)
+							export += (script.GetComponent<InitVariable>() ? "* " : "") + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "," + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + ";";
+						else
+							export += indent(indentLevel) + "<variable type=" + "\"InitVariable\"" + " name=\"" + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "\" value=\"" + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + "\"/>" + "\n";
+					}
+					else if (script.gameObject.GetComponent<IncVariable>() != null)
+					{
+                        DropZone dz = script.GetComponentInChildren<DropZone>(true);
+                        if (dz != null && dz.gameObject == focusedArea)
+                            export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
+
+                        if (exportType == ExportType.PseudoCode)
+                            export += (script.GetComponent<IncVariable>() ? "* " : "") + script.GetComponent<IncVariable>().var_Name.GetComponent<TMP_InputField>().text + ";";
+                        else
+                            export += indent(indentLevel) + "<variable type=" + "\"IncVariable\"" + " name=\"" + script.GetComponent<IncVariable>().var_Name.GetComponent<TMP_InputField>().text + "\"/>" + "\n";
+                    }
                 }
 				else 
 				{
