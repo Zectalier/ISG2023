@@ -1209,7 +1209,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15930590133305344
-    m_Localized: Create Variable
+    m_Localized: Sortie
     m_Metadata:
       m_Items: []
   - m_Id: 15930701752123392
@@ -1328,6 +1328,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 61255026913513472
     m_Localized: 'Variable :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63390490873237504
+    m_Localized: Init. Variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63391046211670016
+    m_Localized: Get Variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63390855622496256
+    m_Localized: "Sup\xE9rieur"
     m_Metadata:
       m_Items: []
   references:

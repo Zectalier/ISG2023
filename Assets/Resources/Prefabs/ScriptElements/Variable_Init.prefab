@@ -242,9 +242,9 @@ GameObject:
   - component: {fileID: 589826222410828792}
   - component: {fileID: 589826222410828794}
   - component: {fileID: 589826222410828795}
-  - component: {fileID: 5917185285967727302}
+  - component: {fileID: 4277674377065627904}
+  - component: {fileID: 3953348068389601021}
   - component: {fileID: 4388506228799560043}
-  - component: {fileID: -1758695118244794728}
   - component: {fileID: -3822347777386372020}
   - component: {fileID: 6195889844468152799}
   - component: {fileID: -5182257220759807850}
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5917185285967727302
+--- !u!114 &4277674377065627904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,21 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedTo: {fileID: 0}
---- !u!114 &4388506228799560043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589826222410828797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61ad2fa1fc88ea34598e5b35d22fe0f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  var_Name: {fileID: 5207514993391684504}
-  var_Value: {fileID: 2815269292468963651}
---- !u!114 &-1758695118244794728
+--- !u!114 &3953348068389601021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,6 +359,21 @@ MonoBehaviour:
   highlightedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   next: {fileID: 0}
   actionType: 3
+  isVariable: 1
+--- !u!114 &4388506228799560043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589826222410828797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ad2fa1fc88ea34598e5b35d22fe0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  var_Name: {fileID: 5207514993391684504}
+  var_Value: {fileID: 2815269292468963651}
 --- !u!114 &-3822347777386372020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,7 +649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d1dc4bcb9f07f748b70accf838ab260, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17f485aa53649fe45a05b300d5d884ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

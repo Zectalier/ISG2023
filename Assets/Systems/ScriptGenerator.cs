@@ -187,7 +187,33 @@ public class ScriptGenerator : FSystem {
 			case "captor":
 				obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName(conditionNode.Attributes.GetNamedItem("type").Value), mainCanvas);
 				break;
-		}
+
+			case "gt":
+                obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName("SupVariable"), mainCanvas);
+                slots = obj.GetComponentsInChildren<ReplacementSlot>(true);
+                if (conditionNode.HasChildNodes)
+                {
+                    GameObject emptyZone = null;
+                    foreach (XmlNode supNode in conditionNode.ChildNodes)
+                    {
+                        if (supNode.Name == "conditionLeft")
+                            // The Left slot is the second ReplacementSlot (first is the And operator)
+                            emptyZone = slots[1].gameObject;
+                        if (supNode.Name == "conditionRight")
+                            // The Right slot is the third ReplacementSlot
+                            emptyZone = slots[2].gameObject;
+                        if (emptyZone != null && supNode.HasChildNodes)
+                        {
+                            // Parse xml condition
+                            GameObject child = readXMLInstruction(supNode.FirstChild);
+                            // Add child to empty zone
+                            Utility.addItemOnDropArea(child, emptyZone);
+                        }
+                        emptyZone = null;
+                    }
+                }
+				break;
+        }
 
 		if (!gameData.dragDropEnabled)
 		{
@@ -331,6 +357,24 @@ public class ScriptGenerator : FSystem {
 				break;
 			case "action":
 				obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName(actionNode.Attributes.GetNamedItem("type").Value), mainCanvas);
+				break;
+
+			case "variable":
+				switch(actionNode.Attributes.GetNamedItem("type").Value)
+				{
+                    case "InitVariable":
+                        obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName("InitVariable"), mainCanvas);
+						GameObject var_Name = obj.GetComponent<InitVariable>().var_Name;
+						GameObject var_Value = obj.GetComponent<InitVariable>().var_Value;
+						var_Name.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("name").Value;
+						var_Value.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("value").Value;
+                        break;
+					case "GetVariable":
+						obj = Utility.createEditableBlockFromLibrary(getLibraryItemByName("GetVariable"), mainCanvas);
+						GameObject var_Name2 = obj.GetComponent<GetVariable>().var_Name;
+						var_Name2.GetComponent<TMP_InputField>().text = actionNode.Attributes.GetNamedItem("name").Value;
+                        break;
+                }
 				break;
 		}
 

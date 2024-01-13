@@ -1373,6 +1373,21 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 63390490873237504
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (25)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63390855622496256
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (27)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63391046211670016
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (26)/BlockName
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

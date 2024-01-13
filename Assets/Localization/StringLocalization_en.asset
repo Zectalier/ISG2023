@@ -1309,5 +1309,17 @@ MonoBehaviour:
     m_Localized: 'Variable :'
     m_Metadata:
       m_Items: []
+  - m_Id: 63390490873237504
+    m_Localized: Init. Variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63391046211670016
+    m_Localized: Get Variable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63390855622496256
+    m_Localized: Greater
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

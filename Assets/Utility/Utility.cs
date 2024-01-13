@@ -432,7 +432,27 @@ public static class Utility
 							GameObjectManager.addComponent<NewEnd>(MainLoop.instance.gameObject, new { endType = NewEnd.BadCondition });
 						}
 					}
-				}
+                    else if (bo.operatorType == BaseOperator.OperatorType.SupOperator)
+                    {
+                        // Si les côtés de l'opérateur sont remplis, alors il compte 5 childs, sinon cela veux dire que il manque des conditions
+                        if (conditionContainer.childCount == 5)
+                        {
+                            chaine.Add("(");
+							string var1_name = getVariableValue(conditionContainer.GetChild(0).gameObject);
+							var1_name = "var_" + var1_name;
+                            chaine.Add(var1_name);
+                            chaine.Add(">");
+                            string var2_name = getVariableValue(conditionContainer.GetChild(3).gameObject);
+                            var2_name = "var_" + var2_name;
+                            chaine.Add(var2_name);
+                            chaine.Add(")");
+                        }
+                        else
+                        {
+                            GameObjectManager.addComponent<NewEnd>(MainLoop.instance.gameObject, new { endType = NewEnd.BadCondition });
+                        }
+                    }
+                }
 				else
 				{
 					Debug.LogError("Unknown BaseCondition!!!");
@@ -443,6 +463,12 @@ public static class Utility
 			GameObjectManager.addComponent<NewEnd>(MainLoop.instance.gameObject, new { endType = NewEnd.BadCondition });
 	}
 	
+	public static string getVariableValue(GameObject go)
+	{
+		GetVariable getVariable = go.GetComponent<GetVariable>();
+		string varName = getVariable.var_Name.GetComponent<TMP_InputField>().text;
+		return varName;
+    }
 	// link actions together => define next property
 	// Associe à chaque bloc le bloc qui sera executé aprés
 	public static void computeNext(GameObject container)
@@ -519,29 +545,59 @@ public static class Utility
 			// Cas d'une ACTION
 			if (script is BasicAction)
 			{
-				DropZone dz = script.GetComponentInChildren<DropZone>(true);
-				if (dz != null && dz.gameObject == focusedArea)
-					export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
+				if ((script as BasicAction).isVariable) //Cas d'un InitVariable
+                {
+                    DropZone dz = script.GetComponentInChildren<DropZone>(true);
+                    if (dz != null && dz.gameObject == focusedArea)
+                        export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
 
-				if (exportType == ExportType.PseudoCode)
-					export += (script.GetComponent<CurrentAction>() ? "* " : "") + (script as BasicAction).actionType.ToString() + ";";
-				else
-					export += indent(indentLevel) + "<action type=\"" + (script as BasicAction).actionType + "\"/>"+(script.GetComponent<CurrentAction>() ? "<!-- Current Action -->" : "") +"\n";
+                    if (exportType == ExportType.PseudoCode)
+                        export += (script.GetComponent<InitVariable>() ? "* " : "") + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "," + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + ";";
+                    else
+                        export += indent(indentLevel) + "<variable type=" + "\"InitVariable\"" + " name=\"" + script.GetComponent<InitVariable>().var_Name.GetComponent<TMP_InputField>().text + "\" value=\"" + script.GetComponent<InitVariable>().var_Value.GetComponent<TMP_InputField>().text + "\"/>" + "\n";
+                }
+				else 
+				{
+					DropZone dz = script.GetComponentInChildren<DropZone>(true);
+					if (dz != null && dz.gameObject == focusedArea)
+						export += exportType == ExportType.PseudoCode ? "#### " : indent(indentLevel) + "<!--####-->\n";
+
+					if (exportType == ExportType.PseudoCode)
+						export += (script.GetComponent<CurrentAction>() ? "* " : "") + (script as BasicAction).actionType.ToString() + ";";
+					else
+						export += indent(indentLevel) + "<action type=\"" + (script as BasicAction).actionType + "\"/>"+(script.GetComponent<CurrentAction>() ? "<!-- Current Action -->" : "") +"\n";
+				}
 			}
+
 			// Cas d'un CAPTOR
 			else if (script is BaseCaptor)
 			{
-				ReplacementSlot localRS = script.GetComponent<ReplacementSlot>();
-				if (localRS.gameObject == focusedArea)
-					export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
+				if ((script as BaseCaptor).captorType == BaseCaptor.CaptorType.GetVariable){ //Cas d'un GetVariable
+                    ReplacementSlot localRS = script.GetComponent<ReplacementSlot>();
+                    if (localRS.gameObject == focusedArea)
+                        export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
 
-				if (exportType == ExportType.PseudoCode)
-					export += (script as BaseCaptor).captorType.ToString();
-				else
-					export += indent(indentLevel) + "<captor type=\"" + (script as BaseCaptor).captorType + "\"/>\n";
+                    if (exportType == ExportType.PseudoCode)
+                        export += (script as BaseCaptor).captorType.ToString() + script.GetComponent<GetVariable>().var_Name.GetComponent<TMP_InputField>().text;
+                    else
+                        export += indent(indentLevel) + "<variable type=" + "\"GetVariable\"" + " name=\"" + script.GetComponent<GetVariable>().var_Name.GetComponent<TMP_InputField>().text + "\"/>\n";
 
-				if (localRS.gameObject == focusedArea)
-					export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
+                    if (localRS.gameObject == focusedArea)
+                        export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
+                }
+				else {
+					ReplacementSlot localRS = script.GetComponent<ReplacementSlot>();
+					if (localRS.gameObject == focusedArea)
+						export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
+
+					if (exportType == ExportType.PseudoCode)
+						export += (script as BaseCaptor).captorType.ToString();
+					else
+						export += indent(indentLevel) + "<captor type=\"" + (script as BaseCaptor).captorType + "\"/>\n";
+
+					if (localRS.gameObject == focusedArea)
+						export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
+				}
 			}
 			// Cas d'un OPERATOR
 			else if (script is BaseOperator)
@@ -582,6 +638,24 @@ public static class Utility
 
 					export += exportType == ExportType.PseudoCode ? ")" : indent(indentLevel + 1) + "</conditionRight>\n" + indent(indentLevel) + "</" + (ope.operatorType == BaseOperator.OperatorType.AndOperator ? "and" : "or") + ">\n";
 				}
+				else if (ope.operatorType == BaseOperator.OperatorType.SupOperator)
+				{
+                    export += exportType == ExportType.PseudoCode ? "####" : indent(indentLevel) + "<gt>\n" + indent(indentLevel + 1) + "<conditionLeft>\n";
+
+                    if (container.Find("EmptyVariableSlot1").GetComponent<ReplacementSlot>().gameObject == focusedArea)
+                        export += exportType == ExportType.PseudoCode ? "####" : indent(indentLevel + 2) + "<!--####-->\n";
+                    else
+                        export += exportBlockToString(container.GetChild(0).GetComponentInChildren<BaseCondition>(true), focusedArea, exportType, indentLevel + 2);
+
+                    export += exportType == ExportType.PseudoCode ? ") " + "####" + " (" : indent(indentLevel + 1) + "</conditionLeft>\n" + indent(indentLevel + 1) + "<conditionRight>\n";
+
+                    if (container.Find("EmptyVariableSlot2").GetComponent<ReplacementSlot>().gameObject == focusedArea)
+                        export += exportType == ExportType.PseudoCode ? "####" : indent(indentLevel + 2) + "<!--####-->\n";
+                    else
+                        export += exportBlockToString(container.GetChild(container.childCount - 2).GetComponentInChildren<BaseCondition>(true), focusedArea, exportType, indentLevel + 2);
+
+                    export += exportType == ExportType.PseudoCode ? ")" : indent(indentLevel + 1) + "</conditionRight>\n" + indent(indentLevel) + "</gt>\n";
+                }
 				if (localRS.gameObject == focusedArea)
 					export += exportType == ExportType.PseudoCode ? "##" : indent(indentLevel) + "<!--##-->\n";
 			}
