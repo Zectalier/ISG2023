@@ -1359,7 +1359,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 63489358122127360
-    m_Localized: "Incr\xE9menter la variable"
+    m_Localized: Incrementer la variable
     m_Metadata:
       m_Items: []
   references:
