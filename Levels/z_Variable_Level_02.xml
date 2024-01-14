@@ -48,7 +48,9 @@
 		<blockLimit blockType="Exit" limit="0" />
 	</blockLimits>
 
-	<script outputLine="Script1" editMode="2" type="3">
+	<player inputLine="Bob" posX="3" posY="8" direction="0" />
+
+	<script outputLine="Bob" editMode="2" type="3">
 		<variable type="InitVariable" name="a" value="0"/>
 		<variable type="InitVariable" name="b" value="3"/>
 		<while>
