@@ -2,11 +2,11 @@
 <level>
 	<map>
 		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="1" /><cell value="0" /><cell value="0" /><cell value="0" /><cell value="-1" /><cell value="3" /><cell value="1" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="1" /><cell value="1" /><cell value="1" /><cell value="1" /><cell value="1" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="-1" /><cell value="0" /><cell value="0" /><cell value="0" /><cell value="1" /><cell value="3" /><cell value="-1" /><cell value="-1" /></line>
 		<line><cell value="-1" /><cell value="-1" /><cell value="0" /><cell value="1" /><cell value="0" /><cell value="1" /><cell value="0" /><cell value="-1" /><cell value="-1" /></line>
 		<line><cell value="-1" /><cell value="1" /><cell value="2" /><cell value="-1" /><cell value="0" /><cell value="0" /><cell value="0" /><cell value="1" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /><cell value="1" /><cell value="-1" /><cell value="1" /><cell value="1" /><cell value="-1" /></line>
 		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
 	</map>
 
@@ -78,13 +78,13 @@
 								<action type="TurnLeft"/>
 							</elseContainer>
 						</ifElse>
-						<if>
-							<condition>
-								<captor type="WallRight"/>
-							</condition>
-							<container>
-							</container>
-						</if>
+					</container>
+				</if>
+				<if>
+					<condition>
+						<captor type="WallRight"/>
+					</condition>
+					<container>
 					</container>
 				</if>
 			</container>
