@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <level>
 	<map>
-		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="3" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="2" /><cell value="-1" /></line>
-		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="0" /><cell value="-1" /><cell value="3" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="3" /><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="0" /><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="0" /><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="0" /><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="0" /><cell value="-1" /><cell value="0" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="2" /><cell value="-1" /><cell value="2" /><cell value="-1" /></line>
+		<line><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /><cell value="-1" /></line>
 	</map>
 
 	<score twoStars="0" threeStars="0"/>
@@ -45,9 +46,32 @@
 		<blockLimit blockType="Exit" limit="0" />
 	</blockLimits>
 
-	<player inputLine="Bob" posX="1" posY="6" direction="0" />
+	<player inputLine="Bob" posX="1" posY="7" direction="0" />
+
+	<player inputLine="Karl" posX="3" posY="7" direction="0" />
 
 	<script outputLine="Bob" editMode="0" type="3">
+		<variable type="InitVariable" name="a" value="0"/>
+		<variable type="InitVariable" name="b" value="5"/>
+		<while>
+			<condition>
+				<gt>
+					<conditionLeft>
+						<variable type="GetVariable" name="b"/>
+					</conditionLeft>
+					<conditionRight>
+						<variable type="GetVariable" name="a"/>
+					</conditionRight>
+				</gt>
+			</condition>
+			<container>
+				<action type="Forward"/>
+				<variable type="IncVariable" name="a"/>
+			</container>
+		</while>
+	</script>
+
+	<script outputLine="Karl" editMode="0" type="3">
 		<variable type="InitVariable" name="a" value="0"/>
 		<variable type="InitVariable" name="b" value="6"/>
 		<while>
