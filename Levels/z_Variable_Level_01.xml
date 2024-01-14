@@ -72,16 +72,16 @@
 	</script>
 
 	<script outputLine="Karl" editMode="0" type="3">
-		<variable type="InitVariable" name="a" value="0"/>
-		<variable type="InitVariable" name="b" value="6"/>
+		<variable type="InitVariable" name="b" value="0"/>
+		<variable type="InitVariable" name="a" value="6"/>
 		<while>
 			<condition>
 				<gt>
 					<conditionLeft>
-						<variable type="GetVariable" name="b"/>
+						<variable type="GetVariable" name="a"/>
 					</conditionLeft>
 					<conditionRight>
-						<variable type="GetVariable" name="a"/>
+						<variable type="GetVariable" name="b"/>
 					</conditionRight>
 				</gt>
 			</condition>
