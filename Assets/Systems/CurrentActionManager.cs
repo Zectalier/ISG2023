@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Runtime.CompilerServices;
 using UnityEngine.XR;
+using UnityEditor.Localization.Plugins.XLIFF.V20;
 
 /// <summary>
 /// Manage CurrentAction components, parse scripts and define first action, next actions, evaluate boolean expressions (if and while)...
@@ -203,15 +204,19 @@ public class CurrentActionManager : FSystem
 		string cond = "";
 		for (int i = 0; i < condition.Count; i++)
 		{
-			if (condition[i] == "(" || condition[i] == ")" || condition[i] == "OR" || condition[i] == "AND" || condition[i] == "NOT")
+			if (condition[i] == "(" || condition[i] == ")" || condition[i] == "OR" || condition[i] == "AND" || condition[i] == "NOT" || condition[i] == ">")
 			{
 				cond = cond + condition[i] + " ";
 			}
-			else
-			{
-				cond = cond + checkCaptor(condition[i], agent) + " ";
-			}
-		}
+			else if (condition[i].Contains("var_"))
+            {
+                cond = cond + getVarValue(condition[i].Replace("var_", ""), agent) + " ";
+            }
+            else
+            {
+                cond = cond + checkCaptor(condition[i], agent) + " ";
+            }
+        }
 
 		DataTable dt = new DataTable();
 		var v = dt.Compute(cond, "");
@@ -225,6 +230,12 @@ public class CurrentActionManager : FSystem
 			result = false;
 		}
 		return result;
+	}
+
+	// return the value of the specified variable in the targeted agent
+	private string getVarValue(string varName, GameObject agent)
+	{
+		return agent.GetComponent<ScriptRef>().variables[varName];
 	}
 
 	// return true if the captor is true, and false otherwise
@@ -372,7 +383,7 @@ public class CurrentActionManager : FSystem
 		if (current_ba != null)
 		{
 			// if next is not defined or is a BasicAction we return it
-			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>() || current_ba.next.GetComponent<InitVariable>())
+			if(current_ba.next == null || current_ba.next.GetComponent<BasicAction>())
 				return current_ba.next;
 			else
 				return getFirstActionOf(current_ba.next, agent);

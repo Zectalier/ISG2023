@@ -62,7 +62,15 @@ public class BlocLimitationManager : FSystem
 		if (go.GetComponent<LibraryItemRef>().linkedTo == null)
 		{
 			if (go.GetComponent<BasicAction>())
-				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName(go.GetComponent<BasicAction>().actionType.ToString());
+			{
+				if (go.GetComponent<BasicAction>().isVariable)
+					if(go.GetComponent<InitVariable>() != null)
+						go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("InitVariable");
+					else if (go.GetComponent<IncVariable>() != null)
+						go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IncVariable");
+                else
+					go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName(go.GetComponent<BasicAction>().actionType.ToString());
+			}
 			else if (go.GetComponent<BaseCaptor>())
 				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName(go.GetComponent<BaseCaptor>().captorType.ToString());
 			else if (go.GetComponent<BaseOperator>())
@@ -77,9 +85,7 @@ public class BlocLimitationManager : FSystem
 				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IfElse");
 			else if (go.GetComponent<IfControl>())
 				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("IfThen");
-			else if (go.GetComponent<InitVariable>())
-				go.GetComponent<LibraryItemRef>().linkedTo = getLibraryItemByName("InitVariable");
-		}
+        }
 	}
 
 	private GameObject getLibraryItemByName(string name)

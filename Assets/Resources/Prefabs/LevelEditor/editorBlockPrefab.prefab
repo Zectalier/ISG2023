@@ -1517,9 +1517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockName: 
-  hideColor: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 1}
-  limitedColor: {r: 0.6509804, g: 0.58431375, b: 0, a: 1}
-  unlimitedColor: {r: 0, g: 0.6509804, b: 0.42745098, a: 1}
 --- !u!114 &760616443742464546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1747,7 +1744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ad790d64508a6e246989d807573092d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

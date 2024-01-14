@@ -1373,6 +1373,42 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 63390490873237504
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (25)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63390855622496256
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (27)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63391046211670016
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (26)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63458252916199424
+    m_Key: EditorScene/MetadataCanvas/Scroll View/Viewport/Content/BlocksConfiguration/Scroll
+      View/Viewport/Content/editorBlockPrefab (28)/BlockName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488749151129600
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/InitVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63488947432656896
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/GetVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489209866063872
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/SupVariable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63489358122127360
+    m_Key: MainScene/MainCanvas/LeftPanel/LibraryScrollView/Viewport/LibraryPanel/BlocVariable/ActionPanel/IncVariable
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -10,13 +10,15 @@ public class CurrentActionExecutor : FSystem {
 	private Family f_activableConsole = FamilyManager.getFamily(new AllOfComponents(typeof(Activable),typeof(Position),typeof(AudioSource)));
     private Family f_newCurrentAction = FamilyManager.getFamily(new AllOfComponents(typeof(CurrentAction), typeof(BasicAction)));
 	private Family f_initCurrentAction = FamilyManager.getFamily(new AllOfComponents(typeof(CurrentAction), typeof(InitVariable)));
-	private Family f_agent = FamilyManager.getFamily(new AllOfComponents(typeof(ScriptRef), typeof(Position)));
+    private Family f_incCurrentAction = FamilyManager.getFamily(new AllOfComponents(typeof(CurrentAction), typeof(IncVariable)));
+    private Family f_agent = FamilyManager.getFamily(new AllOfComponents(typeof(ScriptRef), typeof(Position)));
 
 	protected override void onStart()
 	{
 		f_newCurrentAction.addEntryCallback(onNewCurrentAction);
 		f_initCurrentAction.addEntryCallback(onNewInitVariable);
-		Pause = true;
+        f_incCurrentAction.addEntryCallback(onNewIncVariable);
+        Pause = true;
 	}
 
 	protected override void onProcess(int familiesUpdateCount)
@@ -140,11 +142,27 @@ public class CurrentActionExecutor : FSystem {
 		string var_value = varAction.var_Value.GetComponent<TMP_InputField>().text;
 		
 		ca.agent.GetComponent<ScriptRef>().variables[var_name] = var_value;
-
-		Debug.Log(ca.agent.GetComponent<ScriptRef>().variables[var_name]);
 	}
 
-	private void ApplyForward(GameObject go){
+    private void onNewIncVariable(GameObject currentAction)
+    {
+        Pause = false; // activates onProcess to identify inactive robots
+
+        CurrentAction ca = currentAction.GetComponent<CurrentAction>();
+
+        IncVariable varAction = currentAction.GetComponent<IncVariable>();
+        string var_name = varAction.var_Name.GetComponent<TMP_InputField>().text;
+
+		try
+		{
+			ca.agent.GetComponent<ScriptRef>().variables[var_name] = (int.Parse(ca.agent.GetComponent<ScriptRef>().variables[var_name]) + 1).ToString();
+        }
+		catch (System.Exception e) { 
+			Debug.Log(e);
+		}
+    }
+
+    private void ApplyForward(GameObject go){
 		Position pos = go.GetComponent<Position>();
 		switch (go.GetComponent<Direction>().direction){
 			case Direction.Dir.North:
