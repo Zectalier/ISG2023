@@ -87,7 +87,7 @@
 			</condition>
 			<container>
 				<action type="Forward"/>
-				<variable type="IncVariable" name="a"/>
+				<variable type="IncVariable" name="b"/>
 			</container>
 		</while>
 	</script>
